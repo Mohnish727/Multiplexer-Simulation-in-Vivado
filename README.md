@@ -85,9 +85,7 @@ module mux4_to_1_gate (
     or (Y, A_and, B_and, C_and, D_and);
 endmodule
 ```
-## Simulated Output Gate Level Modelling
-
-_______ Here Paste the Simulated output  ___________
+output:![image](https://github.com/user-attachments/assets/d5f13f79-1ad1-4825-82ec-fadbe0f538d8)
 
 ### 4:1 MUX Data Flow Implementation
 ```verilog
@@ -106,9 +104,8 @@ module mux4_to_1_dataflow (
                (S1 & S0 & D);
 endmodule
 ```
-## Simulated Output Data Flow Modelling
+output:![image](https://github.com/user-attachments/assets/cf312662-123f-4aca-b0c3-b22ba77613a5)
 
-_______ Here Paste the Simulated output  ___________
 
 ### 4:1 MUX Behavioral Implementation
 ```verilog
@@ -132,9 +129,7 @@ module mux4_to_1_behavioral (
     end
 endmodule
 ```
-## Simulated Output Behavioral Modelling
-
-_______ Here Paste the Simulated output  ___________
+output:![image](https://github.com/user-attachments/assets/8cb0faaf-9e60-40ae-8627-b8fd9a84dd0d)
 
 
 ### 4:1 MUX Structural Implementation
@@ -169,9 +164,8 @@ module mux4_to_1_structural (
     mux2_to_1 mux_final (.A(mux_low), .B(mux_high), .S(S1), .Y(Y));
 endmodule
 ```
-## Simulated Output Structural Modelling
+output:![image](https://github.com/user-attachments/assets/fe814418-f656-40ff-a1cf-2ced7ca19e10)
 
-_______ Here Paste the Simulated output  ___________
 
 ### Testbench Implementation
 ```verilog
@@ -201,7 +195,11 @@ module mux4_to_1_tb;
                  $time, S1, S0, Y_gate, Y_dataflow, Y_behavioral, Y_structural);
     end
 endmodule
+
+
 ```
+output:![image](https://github.com/user-attachments/assets/4d4a5b47-51db-4bf2-9a5c-1438d7302768)
+
 ### SAMPLE OUTPUT
 ```verilog
 Time=0 | S1=0 S0=0 | Y_gate=0 | Y_dataflow=0 | Y_behavioral=0 | Y_structural=0
